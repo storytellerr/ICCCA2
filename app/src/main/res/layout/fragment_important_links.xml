@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Relativelayout_important_links">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/scroll"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="downlode iccca-2017 brochure"
+                android:textSize="20dp"
+                android:onClick="broucher"
+                android:visibility="visible" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="Iccca2015"
+                android:textSize="20dp"
+                android:onClick="ic15"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="Iccca2016"
+                android:textSize="20dp"
+                android:onClick="ic16"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:text="Author Registration Form"
+            android:textSize="20dp"
+            android:onClick="author"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:text="Attendees Registration Form"
+            android:textSize="20dp"
+            android:onClick="attendees"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="Galgotias University Website"
+                android:textSize="20dp"
+                android:onClick="guweb"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:text="IEEE Copyright Form"
+                android:onClick="ieeecopy"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="IEEE Paper Formate"
+                android:textSize="20dp"
+                android:onClick="ieeeformat"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:text="report a bug"
+                android:textSize="20dp"
+                android:onClick="bug"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

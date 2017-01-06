@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp1"
+            android:title="Home" />
+        <item
+            android:id="@+id/call_for_papers"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Call for papers" />
+        <item
+            android:id="@+id/registration"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="Registration" />
+        <item
+            android:id="@+id/workshop"
+            android:icon="@drawable/ic_work_black_24dp"
+            android:title="Workshop" />
+
+        <item
+            android:id="@+id/important_links"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Important links" />
+
+    </group>
+
+    <item android:title="MORE">
+        <menu>
+            <item
+                android:id="@+id/sponcer"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="Sponcers" />
+            <item
+                android:id="@+id/Contact_us"
+                android:icon="@drawable/ic_menu_call"
+                android:title="Contact us" />
+            <item
+                android:id="@+id/FAQ"
+                android:icon="@drawable/sym_action_chat"
+                android:title="FAQs" />
+        </menu>
+    </item>
+
+</menu>

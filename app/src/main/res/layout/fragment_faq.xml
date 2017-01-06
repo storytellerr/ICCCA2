@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Relativelayout_faq">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="FAQs (Reviewer)"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:textSize="21dp"
+                android:typeface="monospace"
+                android:textStyle="bold"
+                android:textColor="#f93b3b"
+                android:background="#403636"
+                android:layout_marginTop="40dp"
+                android:padding="18dp"
+                android:paddingTop="22dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Q. Is it compulsory to have an EasyChair account to review ICCCA2016 papers?"
+                android:textStyle="bold"
+                android:background="#929090"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. Yes. ICCCA2016 follows EasyChair based review system, so it is necessary to have an Easy Chair Account."
+                android:background="#c6c4c4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. I have an EasyChair Account with a different email id and the invitation which I have received from ICCCA2016 is on a different email id. How can I access my papers now?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. You need to merge your new email id with the old one in the EasyChair account.\n1. Login to the EasyChair Account with your old email id and password.\n2. In the EasyChair menu, follow the menu tabs,EasyChair-My account.\n3. Add as an alternative email address to your account."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. I have an EasyChair account still I cannot find the papers to be reviewed in my account."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. May be the case that you have not added ICCCA2016 to your account. In order to add ICCCA2016 in your EasyChair Account, Click on the link provided to you through the email sent by Chair ICCCA2016, with a request to review papers. Once you are done with it, the paper should be visible to you under the menu tab “Submissions”."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. How can I send my review comments in EasyChair? Where is the option for it?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. You can find this option under menu tab “Reviews” -> “My Papers”. On this page against every paper you must see a column heading “add new Review”. Click on the icon the particular row to add your comments."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. I am logged in to my EasyChair Account but I can see only papers submitted by me. I am unable to see the papers to be reviewed."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. May be that you are logged in as an author in this account. You need to change the role from “author” to “pc”. It can be done by following the menu tab “ICCCA2016”-> “Change Role” and now select “PC member of ICCCA2016”"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+
+
+                android:text="FAQs (Author)"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#f93b3b"
+                android:typeface="monospace"
+                android:background="#403636"
+                android:padding="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. Is it compulsory to have an EasyChair account to submit papers in ICCCA2016?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. Yes. ICCCA2016 follows EasyChair based submission, so it is necessary to have an EasyChair Account."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#929090"
+                android:text="Q. I have created( already have) an EasyChair account. How can I submit my papers?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c6c4c4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="A. If you already have an EasyChair account or you have created a new one then you need to add this conference ICCCA2017 to your account. There are two ways to do it;\n\t1. Go to www.iccca.in\n\t2. Click on Tab “Call for Papers”->“Submit Online”.\n \t\t\t\t\t\t\t\t\t\tOR\n\t\-> Click on Important Link - Submit Online.\n\t\t\t\t\t\t\t\t\t\tOR\n\t->Click on the link https://easychair.org/conferences/?conf=iccca2017 "/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#c6c4c4"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

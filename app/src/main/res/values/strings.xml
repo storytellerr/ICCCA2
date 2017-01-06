@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ICCCA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_newactivity1">newactivity1</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="home_text">\t \tThe evolution of computing and Communications Technologies and their reliability in the different areas of the industry has changed completely the design of automated systems. Computing covers application of Computer Science to the mathematical modeling of complex systems in the field of Engineering and Sciences. Computing is interdisciplinary and application oriented, focusing on techniques and tools that enable computational simulations to be performed.\n \tThe vision today is to best utilize the media of communication. Communication processes are fundamental part of virtually every aspect of human computer interaction (HCI). Research on HCI or data communication takes you to the cutting-edge of research and theory in all areas with in the field of communication like exploration of communication processes, antecedents and consequences of communication in a broad range of network communication.\n"</string>
+    <string name="contect_us">\n <b>Dr. Parma Nand Astya</b> \n \n Professor and Dean. \n Plot no 2, Sector 17A, \n Yamuna Expressway\n  Greater Noida,Uttar Pradesh  Pin-201308, INDIA  Tel: +91120-4806897
+        Mob: +91 9810446717</string>
+
+    <string name="add">
+        School of Computing Science and Engineering
+Galgotias University, Plot no 2 Sector 17A,
+Yamuna Expressway, Greater Noida, UP (INDIA) PIN-201308
+www.galgotiasuniversity.edu.in , Phone: +91-120-4806897
+</string>
+
+
+</resources>
