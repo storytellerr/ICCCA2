@@ -5,9 +5,9 @@
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -17,11 +17,26 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splashscreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
+        <activity android:name=".Picone" />
+        <activity android:name=".Pictwo" />
+        <activity android:name=".Picthree" />
+        <activity android:name=".Picfour" />
+        <activity android:name=".Picfive" />
+        <activity android:name=".Picsix" />
+        <activity android:name=".Picseven" />
+        <activity android:name=".Piceight"></activity>
     </application>
 
 </manifest>

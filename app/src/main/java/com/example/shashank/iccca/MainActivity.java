@@ -243,41 +243,50 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.image1)
         {
 
-            Toast.makeText(this,"pro1",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picone.class);
+            startActivity(in);
         }
         if (id == R.id.image2)
         {
 
-            Toast.makeText(this,"pro2",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Pictwo.class);
+            startActivity(in);
         }
         if (id == R.id.image3)
         {
 
-            Toast.makeText(this,"pro3",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picthree.class);
+            startActivity(in);
         }
         if (id == R.id.image4)
         {
 
-            Toast.makeText(this,"pro4",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picfour.class);
+            startActivity(in);
         }
         if (id == R.id.image5)
         {
 
-            Toast.makeText(this,"pro5",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picfive.class);
+            startActivity(in);
         }
         if (id == R.id.image6)
         {
 
-            Toast.makeText(this,"pro6",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picsix.class);
+            startActivity(in);
+
         }if (id == R.id.image7)
         {
 
-            Toast.makeText(this,"pro7",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Picseven.class);
+            startActivity(in);
         }
         if (id == R.id.image8)
         {
 
-            Toast.makeText(this,"pro8",Toast.LENGTH_LONG).show();
+            Intent in = new Intent(MainActivity.this,Piceight.class);
+            startActivity(in);
         }
 
 
