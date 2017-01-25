@@ -14,28 +14,61 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/imageview1"
-                android:src="@drawable/pro3"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name3"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:background="@color/colourR"
                 />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/pro3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
 
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="290dp"
-                android:layout_below="@+id/imageview1"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                />
+                android:layout_height="wrap_content"
+                android:text="@string/title3"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
 
-        </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/datat3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:background="@color/colourR"
+                android:text="profile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/data3"/>
+
+        </LinearLayout>
     </ScrollView>
+
 
 </RelativeLayout>
