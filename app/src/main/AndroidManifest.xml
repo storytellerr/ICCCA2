@@ -36,7 +36,7 @@
         <activity android:name=".Picfive" />
         <activity android:name=".Picsix" />
         <activity android:name=".Picseven" />
-        <activity android:name=".Piceight"></activity>
+        <activity android:name=".Piceight"/>
     </application>
 
 </manifest>
