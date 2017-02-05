@@ -1,5 +1,6 @@
 package com.example.shashank.iccca;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity
         viewFlipper.setInAnimation(fade_in);
         viewFlipper.setInAnimation(fade_out);
         viewFlipper.setAutoStart(true);
-        viewFlipper.setFlipInterval(5000);
+        viewFlipper.setFlipInterval(4000);
         viewFlipper.startFlipping();
 
     }

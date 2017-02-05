@@ -17,7 +17,7 @@
         <ImageView
             android:layout_marginTop="55dp"
             android:layout_width="wrap_content"
-            android:layout_height="55dp"
+            android:layout_height="60dp"
             android:src="@drawable/banner_1"
             android:scaleType="fitXY" />
 
@@ -39,7 +39,7 @@
 
                 <ViewFlipper
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
+                    android:layout_height="190dp"
                     android:id="@+id/viewFlipper"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="5dp"
