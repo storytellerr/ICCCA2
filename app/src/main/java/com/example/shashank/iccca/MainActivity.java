@@ -114,10 +114,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.home)
         {
 
-           Home home=new Home();
-           FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,home).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+          // Home home=new Home();
+          // FragmentManager manager=getSupportFragmentManager();
+          //  manager.beginTransaction().replace(R.id.abcd,home).commit();
+            findViewById(R.id.content_main).setVisibility(View.VISIBLE);
         }
         else if (id == R.id.call_for_papers)
         {
