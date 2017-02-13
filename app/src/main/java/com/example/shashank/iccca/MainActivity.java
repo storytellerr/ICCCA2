@@ -12,11 +12,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -55,6 +58,9 @@ public class MainActivity extends AppCompatActivity
         viewFlipper.setFlipInterval(4000);
         viewFlipper.startFlipping();
 
+        TextView tv1 = (TextView)findViewById(R.id.textview1);
+        tv1.setText(Html.fromHtml(getResources().getString(R.string.name1)));
+        tv1.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     public void onBackPressed() {
