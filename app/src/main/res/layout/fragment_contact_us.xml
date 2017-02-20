@@ -13,58 +13,60 @@
         android:id="@+id/linearLayout">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="220dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:src="@drawable/pnastya"
             android:scaleType="fitXY" />
         <TextView
-            android:layout_width="220dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
             android:layout_height="match_parent"
             android:text="@string/contect_us"
             android:textSize="15dp"
             android:textStyle="bold"
-            android:paddingLeft="5dp"
-            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
             android:layout_marginRight="5dp" />
 
 
 
     </LinearLayout>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_below="@+id/linearLayout"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:paddingLeft="50dp"
-    android:paddingRight="50dp"
-    android:id="@+id/linearLayout2">
-
-    <ImageButton
-        android:layout_width="50dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:id="@+id/linearLayout2">
 
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/fb"
-        android:scaleType="fitXY" />
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/twit"
-        android:scaleType="fitXY" />
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/fb"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/twit"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
 
 
-</LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
