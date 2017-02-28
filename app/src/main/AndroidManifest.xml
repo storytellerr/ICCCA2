@@ -58,7 +58,7 @@
         <activity
             android:name=".Tab"
             android:label="workshop" />
-        <activity android:name=".Call_for_papers" android:label="Call_for_papers"/>
+        <activity android:name=".Call_for_paper" android:label="Call_for_papers"/>
         <activity android:name=".Contact_us" android:label="Contact_us"/>
         <activity android:name=".Faq" android:label="Faq"/>
         <activity android:name=".Important_links" android:label="Important_links"/>
