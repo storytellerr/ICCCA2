@@ -21,7 +21,7 @@ Yamuna Expressway, Greater Noida, UP (INDIA) PIN-201308
 www.galgotiasuniversity.edu.in , Phone: +91-120-4806897
 </string>
 
-<string name="title1">Talk Title: "Analytics - Journey from Data to Rich Insights".</string>
+    <string name="title1">Talk Title: "Analytics - Journey from Data to Rich Insights".</string>
     <string name="datat1">Journey for any organization to become more of a data-driven organization provides an industrial perspective of data analytics. The process, methodologies, technology capability needed to convert the raw data to rich insights which can be used to support the strategic, financial, and operational decision making for better results for any firm will be discussed.0</string>
     <string name="name1">Prof. Anupam\nAccenture Digital based out of Dallas, Texas (USA)</string>
     <string name="data1">Anupam is a conscientious professional with astute business acumen with over 15 years of rich and insightful Leadership experience. During his career, he has worked with very prestigious organizations likes of IBM, Sears Holdings, SAS and Accenture. He is currently working for Accenture Digital based out of Dallas, Texas (USA) focusing on North American clients and moving back to India to take up a strategic key role with responsibilities around APAC and North American clients.</string>
@@ -65,4 +65,6 @@ www.galgotiasuniversity.edu.in , Phone: +91-120-4806897
     <string name="sponcer1">The conference organizers are seeking sponsors and industrial support for awarding exceptional contributions and offer the best stage for the event in terms of additional activities, such as invited speaker, invited panelists, best paper awards, gala dinner, and other social events.</string>
 
     <string name="name11">&lt;a href="https://github.com/storytellerr">link text1&lt;/a></string>
+    <string name="title_activity_workshop_t">Workshop_t</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

@@ -28,9 +28,9 @@ public class Splashscreen extends AppCompatActivity {
         new Timer().schedule(new TimerTask(){
             public void run() {
                 startActivity(new Intent(Splashscreen.this,MainActivity.class));
-                finish();
+               finish();
             }
-        }, 5000);
+        },5000);
 
     }
 }

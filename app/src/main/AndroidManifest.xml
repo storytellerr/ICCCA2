@@ -9,7 +9,9 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/MyMaterialTheme">
+
+        <!-- android:theme="@style/AppTheme" -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -29,14 +31,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Picone" />
-        <activity android:name=".Pictwo" />
-        <activity android:name=".Picthree" />
-        <activity android:name=".Picfour" />
-        <activity android:name=".Picfive" />
-        <activity android:name=".Picsix" />
-        <activity android:name=".Picseven" />
-        <activity android:name=".Piceight"/>
+        <activity android:name=".Picone" android:label="Prof. Anupam"/>
+        <activity android:name=".Pictwo" android:label="rof. S.C.Sharma"/>
+        <activity android:name=".Picthree" android:label="Prof. Lipika Dey"/>
+        <activity android:name=".Picfour" android:label="Prof. B.V Babu"/>
+        <activity android:name=".Picfive" android:label="Prof. M.S.Manna"/>
+        <activity android:name=".Picsix" android:label="Prof. D.S.Yadav"/>
+        <activity android:name=".Picseven" android:label="Prof. Md Asri Ngadi"/>
+        <activity android:name=".Piceight" android:label="Prof. Subarna Shakya"/>
+        <activity android:name=".Tab" android:label="workshop"/>
     </application>
 
 </manifest>

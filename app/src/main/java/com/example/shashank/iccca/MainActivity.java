@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
 
     {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -121,10 +119,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.home)
         {
 
-          // Home home=new Home();
-          // FragmentManager manager=getSupportFragmentManager();
-          //  manager.beginTransaction().replace(R.id.abcd,home).commit();
-            findViewById(R.id.content_main).setVisibility(View.VISIBLE);
+           Home home=new Home();
+          FragmentManager manager=getSupportFragmentManager();
+           manager.beginTransaction().replace(R.id.abcd,home).commit();
+            findViewById(R.id.content_main).setVisibility(View.GONE);
         }
         else if (id == R.id.call_for_papers)
         {
@@ -143,10 +141,11 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.workshop)
         {
-            Workshop workshop=new Workshop();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,workshop).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            //Workshop workshop=new Workshop();
+           // FragmentManager manager=getSupportFragmentManager();
+            //manager.beginTransaction().replace(R.id.abcd,tab).commit();
+            //findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Tab.class));
         }
         else if(id==R.id.important_links)
         {
