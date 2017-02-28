@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -119,64 +118,39 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.home)
         {
 
-           Home home=new Home();
-          FragmentManager manager=getSupportFragmentManager();
-           manager.beginTransaction().replace(R.id.abcd,home).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,MainActivity.class));
         }
         else if (id == R.id.call_for_papers)
         {
-            call_for_papers call_for_papers=new call_for_papers();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,call_for_papers).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Call_for_papers.class));
         }
         else if (id == R.id.registration)
         {
 
-            Registration registration=new Registration();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,registration).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Registration.class));
         }
         else if (id == R.id.workshop)
         {
-            //Workshop workshop=new Workshop();
-           // FragmentManager manager=getSupportFragmentManager();
-            //manager.beginTransaction().replace(R.id.abcd,tab).commit();
-            //findViewById(R.id.content_main).setVisibility(View.GONE);
             startActivity(new Intent(this,Tab.class));
         }
         else if(id==R.id.important_links)
         {
-            Important_links important_links=new Important_links();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,important_links).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Important_links.class));
         }
 
         else if(id== R.id.sponcer)
         {
-            Sponcer sponcer= new Sponcer();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,sponcer).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Sponcer.class));
         }
 
 
         else if (id == R.id.Contact_us)
         {
-            Contact_us contact_us=new Contact_us();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,contact_us).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Contact_us.class));
         }
         else if (id == R.id.FAQ)
         {
-            Faq faq=new Faq();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.abcd,faq).commit();
-            findViewById(R.id.content_main).setVisibility(View.GONE);
+            startActivity(new Intent(this,Faq.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

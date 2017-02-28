@@ -31,15 +31,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Picone" android:label="Prof. Anupam"/>
-        <activity android:name=".Pictwo" android:label="rof. S.C.Sharma"/>
-        <activity android:name=".Picthree" android:label="Prof. Lipika Dey"/>
-        <activity android:name=".Picfour" android:label="Prof. B.V Babu"/>
-        <activity android:name=".Picfive" android:label="Prof. M.S.Manna"/>
-        <activity android:name=".Picsix" android:label="Prof. D.S.Yadav"/>
-        <activity android:name=".Picseven" android:label="Prof. Md Asri Ngadi"/>
-        <activity android:name=".Piceight" android:label="Prof. Subarna Shakya"/>
-        <activity android:name=".Tab" android:label="workshop"/>
+        <activity
+            android:name=".Picone"
+            android:label="Prof. Anupam" />
+        <activity
+            android:name=".Pictwo"
+            android:label="rof. S.C.Sharma" />
+        <activity
+            android:name=".Picthree"
+            android:label="Prof. Lipika Dey" />
+        <activity
+            android:name=".Picfour"
+            android:label="Prof. B.V Babu" />
+        <activity
+            android:name=".Picfive"
+            android:label="Prof. M.S.Manna" />
+        <activity
+            android:name=".Picsix"
+            android:label="Prof. D.S.Yadav" />
+        <activity
+            android:name=".Picseven"
+            android:label="Prof. Md Asri Ngadi" />
+        <activity
+            android:name=".Piceight"
+            android:label="Prof. Subarna Shakya" />
+        <activity
+            android:name=".Tab"
+            android:label="workshop" />
+        <activity android:name=".Call_for_papers" android:label="Call_for_papers"/>
+        <activity android:name=".Contact_us" android:label="Contact_us"/>
+        <activity android:name=".Faq" android:label="Faq"/>
+        <activity android:name=".Important_links" android:label="Important_links"/>
+        <activity android:name=".Sponcer" android:label="Sponcer"/>
+        <activity android:name=".Registration" android:label="Registration"/>
     </application>
 
 </manifest>

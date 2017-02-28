@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Relativelayout_registration"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="*Early Registration Deadline: 20th Feb –05th March 2017 \n *Late Registration Deadline: 6th- 15th March 2017"
+                android:id="@+id/textView3"
+                android:textColor="#fc5b5b"
+                android:layout_marginTop="0dp"
+                android:paddingTop="23dp"
+                android:paddingLeft="3dp"
+                android:background="#4c4949" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/registration_fee"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="* If more than one author will be coming to attend the conference for paper presentation then at least one author need to register as a Regular Author/Student Author/Industry Author (as applicable) and rest of the authors can register as Co-Author."
+                android:textColor="#f95858"
+                android:background="#3c3b3b" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="* Registration Fee Includes:\n\t1. Registration Kit\n\t2. Certificate\n\t3. Tea/Coffee\n\t4. Lunch\n"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
