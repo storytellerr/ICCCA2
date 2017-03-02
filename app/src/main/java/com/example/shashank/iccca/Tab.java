@@ -58,7 +58,7 @@ public class Tab extends AppCompatActivity {
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabTwo.setText("WSN");
+        tabTwo.setText("  WSN");
         tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_call, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 

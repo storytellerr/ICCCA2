@@ -2,12 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/Relativelayout_registration"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Relativelayout_registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,4 +58,5 @@
                 android:text="* Registration Fee Includes:\n\t1. Registration Kit\n\t2. Certificate\n\t3. Tea/Coffee\n\t4. Lunch\n"/>
         </LinearLayout>
     </ScrollView>
+    </LinearLayout>
 </RelativeLayout>

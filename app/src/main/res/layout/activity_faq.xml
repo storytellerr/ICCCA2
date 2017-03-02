@@ -1,8 +1,18 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/Relativelayout_faq">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
 
     <ScrollView
@@ -28,7 +38,6 @@
                 android:textStyle="bold"
                 android:textColor="#f93b3b"
                 android:background="#403636"
-                android:layout_marginTop="40dp"
                 android:padding="18dp"
                 android:paddingTop="22dp" />
             <TextView
@@ -155,4 +164,4 @@
                 android:background="#c6c4c4"/>
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>

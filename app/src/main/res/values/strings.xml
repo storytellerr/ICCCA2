@@ -67,4 +67,5 @@ www.galgotiasuniversity.edu.in , Phone: +91-120-4806897
     <string name="name11">&lt;a href="https://github.com/storytellerr">link text1&lt;/a></string>
     <string name="title_activity_workshop_t">Workshop_t</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
 </resources>

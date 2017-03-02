@@ -36,7 +36,7 @@
             android:label="Prof. Anupam" />
         <activity
             android:name=".Pictwo"
-            android:label="rof. S.C.Sharma" />
+            android:label="prof. S.C.Sharma" />
         <activity
             android:name=".Picthree"
             android:label="Prof. Lipika Dey" />

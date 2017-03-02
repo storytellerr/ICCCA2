@@ -21,7 +21,9 @@ public class Splashscreen extends AppCompatActivity {
         setContentView(R.layout.activity_splashscreen);
         tv = (ShimmerTextView) findViewById(R.id.shimmer_tv);
         tv1=(ShimmerTextView) findViewById(R.id.shimmer_tv1);
+
         shimmer = new Shimmer();
+        shimmer.setDuration(1400);
         shimmer.start(tv);
         shimmer.start(tv1);
 
@@ -30,7 +32,7 @@ public class Splashscreen extends AppCompatActivity {
                 startActivity(new Intent(Splashscreen.this,MainActivity.class));
                finish();
             }
-        },5000);
+        },2000);
 
     }
 }

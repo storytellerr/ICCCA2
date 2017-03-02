@@ -14,13 +14,6 @@
         android:layout_marginTop="2dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_marginTop="55dp"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:src="@drawable/banner_1"
-            android:scaleType="fitXY" />
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,10 +25,18 @@
             android:background="#0e0d0d"
             android:layout_marginTop="2dp">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:src="@drawable/banner_1"
+                    android:scaleType="fitXY" />
 
                 <ViewFlipper
                     android:layout_width="match_parent"
@@ -82,7 +83,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="-8dp"
                     android:textColor="#fdfafa"
                     android:autoText="false" />
 
@@ -278,26 +279,23 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp" />
 
-                <me.biubiubiu.justifytext.library.JustifyTextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="#060505"
-                    android:textSize="15dp"
-                    android:textColor="#faf2f2"
-                    android:text="created and managed by\n Shashank sharma\n"
-                    android:layout_marginBottom="5dp"
-                    android:typeface="monospace"
-                    android:textIsSelectable="false" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    />
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="end"
+                    android:text="created by "/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/textview1"/>
+                </LinearLayout>
 
                 </LinearLayout>
 

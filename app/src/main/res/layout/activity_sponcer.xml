@@ -1,8 +1,20 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.shashank.iccca.Sponcer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="1dp"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,6 +26,7 @@
             android:background="@android:color/background_light">
 
             <TextView
+                android:layout_marginTop="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/colourR"
@@ -158,4 +171,4 @@
         android:layout_height="10dp"
         />
 
-</RelativeLayout>
+</LinearLayout>

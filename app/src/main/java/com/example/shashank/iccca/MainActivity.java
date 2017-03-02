@@ -56,10 +56,12 @@ public class MainActivity extends AppCompatActivity
         viewFlipper.setFlipInterval(4000);
         viewFlipper.startFlipping();
 
-        TextView tv1 = (TextView)findViewById(R.id.textview1);
-        tv1.setText(Html.fromHtml(getResources().getString(R.string.name1)));
+       TextView tv1 = (TextView)findViewById(R.id.textview1);
+        tv1.setText(Html.fromHtml("<a href=https://www.facebook.com/shashank.sharma.560272>Shashank sharma"));
         tv1.setMovementMethod(LinkMovementMethod.getInstance());
     }
+
+
 
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
