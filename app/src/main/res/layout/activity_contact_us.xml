@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/Relativelayout_contact_us"
-    android:background="#4c4a4a">
+    android:background="#0b0b0b">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -35,6 +35,7 @@
             android:text="@string/contect_us"
             android:textSize="15dp"
             android:textStyle="bold"
+            android:textColor="#fff"
             android:paddingLeft="8dp"
             android:paddingRight="2dp"
             android:layout_marginRight="5dp" />
@@ -85,6 +86,7 @@
         android:layout_below="@+id/linearLayout2"
         android:layout_centerHorizontal="true"
         android:paddingTop="5dp"
+        android:textColor="#fff"
         android:paddingBottom="10dp"
         android:textSize="20dp"
         android:textStyle="bold"
