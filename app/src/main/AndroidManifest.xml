@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shashank.iccca">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -58,12 +58,26 @@
         <activity
             android:name=".Tab"
             android:label="workshop" />
-        <activity android:name=".Call_for_paper" android:label="Call_for_papers"/>
-        <activity android:name=".Contact_us" android:label="Contact_us"/>
-        <activity android:name=".Faq" android:label="Faq"/>
-        <activity android:name=".Important_links" android:label="Important_links"/>
-        <activity android:name=".Sponcer" android:label="Sponcer"/>
-        <activity android:name=".Registration" android:label="Registration"/>
+        <activity
+            android:name=".Call_for_paper"
+            android:label="Call_for_papers" />
+        <activity
+            android:name=".Contact_us"
+            android:label="Contact_us" />
+        <activity
+            android:name=".Faq"
+            android:label="Faq" />
+        <activity
+            android:name=".Important_links"
+            android:label="Important_links" />
+        <activity
+            android:name=".Sponcer"
+            android:label="Sponcer" />
+        <activity
+            android:name=".Registration"
+            android:label="Registration" />
+        <activity android:name=".Schedule"
+            android:label="Schedule"/>
     </application>
 
 </manifest>

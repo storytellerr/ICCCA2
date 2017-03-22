@@ -122,6 +122,10 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(this,MainActivity.class));
         }
+        else if(id ==R.id.schedule)
+        {
+            startActivity(new Intent(this,Schedule.class));
+        }
         else if (id == R.id.call_for_papers)
         {
             startActivity(new Intent(this,Call_for_paper.class));
