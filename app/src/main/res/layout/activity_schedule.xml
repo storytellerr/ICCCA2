@@ -23,7 +23,7 @@
        android:layout_height="150dp"
         android:background="#b4afaf"
         android:textSize="20dp"
-        an.droid:layout_centerInParent="true"
+        android:layout_centerInParent="true"
         android:id="@+id/asd"/>
 
 </RelativeLayout>
