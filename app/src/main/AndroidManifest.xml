@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shashank.iccca">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -76,8 +79,10 @@
         <activity
             android:name=".Registration"
             android:label="Registration" />
-        <activity android:name=".Schedule"
-            android:label="Schedule"/>
+        <activity
+            android:name=".Schedule"
+            android:label="Schedule" />
+        <activity android:name=".Callpaper"></activity>
     </application>
 
 </manifest>

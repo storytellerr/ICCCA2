@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -40,6 +42,7 @@ public class Schedule extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String value=dataSnapshot.getValue(String.class);
+                Toast.makeText(Schedule.this,"change"+value,Toast.LENGTH_LONG).show();
                 tv.setText(value);
             }
             @Override

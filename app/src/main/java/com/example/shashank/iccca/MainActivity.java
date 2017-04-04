@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.call_for_papers)
         {
-            startActivity(new Intent(this,Call_for_paper.class));
+            startActivity(new Intent(this,Callpaper.class));
         }
         else if (id == R.id.registration)
         {
