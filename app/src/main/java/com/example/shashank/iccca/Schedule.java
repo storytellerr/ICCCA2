@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Config;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -35,22 +36,32 @@ public class Schedule extends AppCompatActivity {
             }
         });
 
-        tv= (TextView) findViewById(R.id.asd);
-        mref = new Firebase("https://iccca2-337f7.firebaseio.com/");
-
+        tv = (TextView) findViewById(R.id.name);
+        mref = new Firebase(Config."https://iccca2-337f7.firebaseio.com/");
+        Toast.makeText(Schedule.this, "first", Toast.LENGTH_SHORT).show();
         mref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String value=dataSnapshot.getValue(String.class);
-                Toast.makeText(Schedule.this,"change"+value,Toast.LENGTH_LONG).show();
-                tv.setText(value);
+            public void onDataChange(DataSnapshot snapshot) {
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    //Getting the data from snapshot
+                    Fireapp person = postSnapshot.getValue(Fireapp.class);
+
+                    //Adding it to a string
+                    String string = "Name: " + person.getName() + "\nAddress: " + person.getTime() + "\n\n";
+
+                    Toast.makeText(Schedule.this, "second", Toast.LENGTH_SHORT).show();
+                    //Displaying it on textview
+                    tv.setText(string);
+                }
             }
+
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-
+                Toast.makeText(Schedule.this, "third", Toast.LENGTH_SHORT).show();
+                System.out.println("The read failed: " + firebaseError.getMessage());
             }
+
+
         });
-
-
     }
 }
