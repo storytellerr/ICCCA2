@@ -13,7 +13,7 @@ public class Picfour extends AppCompatActivity {
         setContentView(R.layout.activity_picfour);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. B.V Babu");
+        toolbar.setTitle("Dr. Sneha Anand");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

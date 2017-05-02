@@ -1,34 +1,42 @@
 package com.example.shashank.iccca;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.firebase.client.Config;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Schedule extends AppCompatActivity {
 
-    private Firebase mref;
-    private TextView tv;
     private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        Firebase.setAndroidContext(this);
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Schedule");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+        setupTabIcons();
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,32 +44,60 @@ public class Schedule extends AppCompatActivity {
             }
         });
 
-        tv = (TextView) findViewById(R.id.name);
-        mref = new Firebase(Config."https://iccca2-337f7.firebaseio.com/");
-        Toast.makeText(Schedule.this, "first", Toast.LENGTH_SHORT).show();
-        mref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                    //Getting the data from snapshot
-                    Fireapp person = postSnapshot.getValue(Fireapp.class);
+    }
 
-                    //Adding it to a string
-                    String string = "Name: " + person.getName() + "\nAddress: " + person.getTime() + "\n\n";
+    private void setupTabIcons() {
 
-                    Toast.makeText(Schedule.this, "second", Toast.LENGTH_SHORT).show();
-                    //Displaying it on textview
-                    tv.setText(string);
-                }
-            }
+        TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabOne.setText(" 5th May");
+        //  tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_favourite, 0, 0);
+        tabLayout.getTabAt(0).setCustomView(tabOne);
 
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-                Toast.makeText(Schedule.this, "third", Toast.LENGTH_SHORT).show();
-                System.out.println("The read failed: " + firebaseError.getMessage());
-            }
+        TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabTwo.setText("    6th May");
+        //  tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_call, 0, 0);
+        tabLayout.getTabAt(1).setCustomView(tabTwo);
 
+        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabThree.setText("  News");
+        //  tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_android, 0, 0);
+        tabLayout.getTabAt(2).setCustomView(tabThree);
+    }
 
-        });
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new Fifth(), "ONE");
+        adapter.addFrag(new Sixth(), "TWO");
+        adapter.addFrag(new News(), "THREE");
+        viewPager.setAdapter(adapter);
+    }
+
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFrag(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
     }
 }

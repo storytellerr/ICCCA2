@@ -13,8 +13,8 @@ public class Picfive extends AppCompatActivity {
         setContentView(R.layout.activity_picfive);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. M.S.Manna");
-       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setTitle("Dr. Suneel Whattal");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

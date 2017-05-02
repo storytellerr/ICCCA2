@@ -1,16 +1,313 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.shashank.iccca.OneFragment">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_height="wrap_content"
-        android:text="IOT"
-        android:textSize="45dp"
-        android:textStyle="bold"/>
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colourR"
+        android:text="Registration Fee"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textColor="#fcf7f7"
+        android:paddingTop="8dp" />
 
-</RelativeLayout>
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Fee= Rs 1200/per candidate, It includes:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_margin="8dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022Registration \n\u2022Kit\n\u2022Breakfast\n\u2022Lunch\n\u2022Certificate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colourR"
+        android:text="Registration Form"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textColor="#fcf7f7"
+        android:paddingTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:id="@+id/tvv"
+            android:textColor="#4466fc"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="to download Registration form"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="And after filling it mail it to iccca2017@gmail.com with subject as Attendees for ICCCA-2017(*must be in .docx format )."
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Account Name:	"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="GALGOTIAS UNIVERSITY UTTAR PRADESH"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Account Numbe:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:text="915010006301196"
+                android:layout_height="15dp"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Bank Name:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="Axis Bank"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Branch address:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="D-1, Alpha Commercial Belt–I, Greater Noida (UP), INDIA  "
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Account Type:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="SB"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Branch Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="624"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="MICR Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="110211054"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="IFSC Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="UTIB0000624"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="MICR Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="110211054"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="MICR Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="110211054"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="MICR Code:"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:text="110211054"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+</LinearLayout>
+</ScrollView>

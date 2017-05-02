@@ -126,10 +126,10 @@ public class MainActivity extends AppCompatActivity
         {
             startActivity(new Intent(this,Schedule.class));
         }
-        else if (id == R.id.call_for_papers)
+        /*else if (id == R.id.call_for_papers)
         {
             startActivity(new Intent(this,Callpaper.class));
-        }
+        }*/
         else if (id == R.id.registration)
         {
 
@@ -195,55 +195,7 @@ public class MainActivity extends AppCompatActivity
         Toast.makeText(this,"rate us",Toast.LENGTH_LONG).show();
     }
 
-    public void broucher(View v)
-    {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://iccca.in/downlaod_files/brochureICCCA2017.pdf")));
-    }
 
-    public void author(View v)
-    {
-        //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://iccca.in/")));
-        Toast.makeText(this,"Author Registration Form",Toast.LENGTH_LONG).show();
-
-    }
-
-   public void attendees(View v)
-   {
-       //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://iccca.in/")));
-       Toast.makeText(this,"Attendees Registration Form",Toast.LENGTH_LONG).show();
-   }
-
-    public void guweb(View v)
-    {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://galgotiasuniversity.edu.in/")));
-    }
-
- public void ieeecopy(View v)
- {
-     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://iccca.in/downlaod_files/IEEECopy.pdf")));
-
- }
-
-    public void ieeeformat(View v)
-    {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://iccca.in/downlaod_files/ICCCA2017.docx")));
-
-    }
-
-    public void bug(View v)
-    {
-        Toast.makeText(this,"contact shashank sharma",Toast.LENGTH_LONG).show();
-    }
-
-    public void ic15(View v)
-    {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iccca2015.com/")));
-    }
-
-    public void ic16(View v)
-    {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iccca2016.com/")));
-    }
 
 
 

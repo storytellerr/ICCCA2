@@ -14,7 +14,7 @@ public class Picseven extends AppCompatActivity {
         setContentView(R.layout.activity_picseven);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. Md Asri Ngadi");
+        toolbar.setTitle("Dr Saif");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

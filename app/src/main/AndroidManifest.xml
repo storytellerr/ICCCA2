@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -33,34 +34,37 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity
             android:name=".Picone"
-            android:label="Prof. Anupam" />
+            android:label="Dr. Jaime Lloret" />
         <activity
             android:name=".Pictwo"
-            android:label="prof. S.C.Sharma" />
+            android:label="Dr. Janet Light" />
         <activity
             android:name=".Picthree"
-            android:label="Prof. Lipika Dey" />
+            android:label="Prof. Radu Prodan" />
         <activity
             android:name=".Picfour"
-            android:label="Prof. B.V Babu" />
+            android:label="Dr. Sneha Anand" />
         <activity
             android:name=".Picfive"
-            android:label="Prof. M.S.Manna" />
+            android:label="Dr. Suneel Whattal" />
         <activity
             android:name=".Picsix"
-            android:label="Prof. D.S.Yadav" />
+            android:label= "Prof. Dr. Subarna Shakya"/>
         <activity
             android:name=".Picseven"
-            android:label="Prof. Md Asri Ngadi" />
+            android:label="Dr Saif" />
         <activity
             android:name=".Piceight"
-            android:label="Prof. Subarna Shakya" />
+            android:label="Prof. P.K.Garg" />
         <activity
             android:name=".Tab"
-            android:label="workshop" />
+            android:label="workshop" >
+        </activity>
         <activity
             android:name=".Call_for_paper"
             android:label="Call_for_papers" />
@@ -81,7 +85,9 @@
             android:label="Registration" />
         <activity
             android:name=".Schedule"
-            android:label="Schedule" />
+            android:label="Schedule" >
+
+        </activity>
         <activity android:name=".Callpaper"></activity>
     </application>
 

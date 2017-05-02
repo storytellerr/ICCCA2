@@ -57,13 +57,14 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="60dp"
-
+            android:onClick="fbb"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/fb"
             android:scaleType="fitXY" />
         <ImageButton
             android:layout_width="50dp"
+            android:onClick="twitt"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"

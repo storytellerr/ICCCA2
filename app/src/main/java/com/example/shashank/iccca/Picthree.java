@@ -14,7 +14,7 @@ public class Picthree extends AppCompatActivity {
         setContentView(R.layout.activity_picthree);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. Lipika Dey");
+        toolbar.setTitle("Prof. Radu Prodan");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

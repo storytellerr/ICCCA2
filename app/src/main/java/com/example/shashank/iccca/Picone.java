@@ -13,7 +13,7 @@ public class Picone extends AppCompatActivity {
         setContentView(R.layout.activity_picone);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. Anupam");
+        toolbar.setTitle("Dr. Jaime Lloret");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

@@ -14,7 +14,7 @@ public class Picsix extends AppCompatActivity {
         setContentView(R.layout.activity_picsix);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. D.S.Yadav");
+        toolbar.setTitle("Prof. Dr. Subarna Shakya");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

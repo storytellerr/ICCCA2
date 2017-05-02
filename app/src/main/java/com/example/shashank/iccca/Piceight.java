@@ -14,7 +14,7 @@ public class Piceight extends AppCompatActivity {
         setContentView(R.layout.activity_piceight);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Prof. Subarna Shakya");
+        toolbar.setTitle("Prof. P.K.Garg");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

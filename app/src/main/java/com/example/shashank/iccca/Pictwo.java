@@ -14,7 +14,7 @@ public class Pictwo extends AppCompatActivity {
         setContentView(R.layout.activity_pictwo);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("prof. S.C.Sharma");
+        toolbar.setTitle("Dr. Janet Light");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
